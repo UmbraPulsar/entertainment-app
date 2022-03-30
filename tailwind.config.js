@@ -17,6 +17,10 @@ module.exports = {
 				BodyM: '0.9375rem',
 				BodyS: '0.8125rem',
 			},
+			fontWeight: {
+				Light: '300',
+				Medium: '500',
+			},
 		},
 	},
 	plugins: [],
