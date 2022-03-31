@@ -1,14 +1,14 @@
 module.exports = {
 	content: ['./src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
-		colors: {
-			PureWhite: '#FFFFFF',
-			Red: '#FC4747',
-			DarkBlue: '#10141E',
-			GreyishBlue: '#FC4747',
-			SemiDarkBlue: '#161D2F',
-		},
 		extend: {
+			colors: {
+				PureWhite: '#FFFFFF',
+				Red: '#FC4747',
+				DarkBlue: '#10141E',
+				GreyishBlue: '#5A698F',
+				SemiDarkBlue: '#161D2F',
+			},
 			fontSize: {
 				L: '2rem',
 				M: '1.5rem',
