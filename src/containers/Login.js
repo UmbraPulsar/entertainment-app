@@ -1,7 +1,7 @@
 import React from 'react';
-
+import PageWrapper from '../components/PageWrapper';
 function Login() {
-	return <div>Login</div>;
+	return <PageWrapper>Home</PageWrapper>;
 }
 
 export default Login;

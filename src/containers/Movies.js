@@ -1,7 +1,8 @@
 import React from 'react';
+import PageWrapper from '../components/PageWrapper';
 
 function Movies() {
-	return <div>Movies</div>;
+	return <PageWrapper>Movies</PageWrapper>;
 }
 
 export default Movies;
