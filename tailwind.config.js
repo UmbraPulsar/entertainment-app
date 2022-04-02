@@ -13,7 +13,7 @@ module.exports = {
 				L: '2rem',
 				M: '1.5rem',
 				S: '1.5rem',
-				XS: '1.125rem',
+				XS: '1.25rem',
 				BodyM: '0.9375rem',
 				BodyS: '0.8125rem',
 			},

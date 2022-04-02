@@ -3,7 +3,7 @@ import { SearchIcon } from './Icons';
 
 function Searchbar() {
 	return (
-		<div className='flex p-4'>
+		<div className='flex px-4 mt-6'>
 			<SearchIcon />
 			<input
 				className='

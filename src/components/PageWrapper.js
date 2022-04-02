@@ -2,7 +2,7 @@ import React from 'react';
 
 function PageWrapper({ children }) {
 	return (
-		<div className='flex flex-col min-h-screen p-6 bg-DarkBlue'>
+		<div className='flex flex-col min-h-screen px-6 text-PureWhite  bg-DarkBlue'>
 			{children}
 		</div>
 	);
