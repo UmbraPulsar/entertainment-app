@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { BookmarkIcon, CategoryIcon } from './Icons';
-import { XSmallHeading } from './Typography';
+
 const BookMarkButton = () => {
 	return (
 		<button className='flex justify-center items-center  h-8 w-8 ml-auto bg-black/50 border-none rounded-full'>
@@ -16,16 +16,18 @@ function TitleCard({
 	category = 'Movie',
 	rating = 'PG',
 	bookmarked,
-	trending,
+	trending = true,
 }) {
 	return (
 		<div
 			style={{
-				backgroundImage: `url("/thumbnails/${title}/${
-					trending ? 'trending' : 'regular'
-				}/small.jpg")`,
+				backgroundImage: `url("/thumbnails/${title.replace(
+					/\s/g,
+					'-',
+				)}/${trending ? 'trending' : 'regular'}/small.jpg")`,
 			}}
 			className={`
+			shrink-0
 			relative
             w-60
             h-32
@@ -35,7 +37,7 @@ function TitleCard({
             bg-cover 
             rounded-lg
             `}>
-			<BookMarkButton />
+			<BookMarkButton filled={bookmarked} />
 			<div className='absolute bottom-4 left-4'>
 				<div className='flex items-center text-[12px] uppercase'>
 					<p className='font-Light '>{year}</p>
