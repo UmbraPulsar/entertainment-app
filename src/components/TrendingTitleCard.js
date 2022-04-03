@@ -1,18 +1,9 @@
 import React from 'react';
-
-import { BookmarkIcon, CategoryIcon } from './Icons';
-
-const BookMarkButton = () => {
-	return (
-		<button className='flex justify-center items-center  h-8 w-8 ml-auto bg-black/50 border-none rounded-full'>
-			<BookmarkIcon />
-		</button>
-	);
-};
-function TitleCard({
+import { CategoryIcon } from './Icons';
+import BookMarkButton from './BookmarkButton';
+function TrendingCard({
 	title = 'Title',
 	year = 'Year',
-	imageType,
 	category = 'Movie',
 	rating = 'PG',
 	bookmarked,
@@ -57,4 +48,4 @@ function TitleCard({
 	);
 }
 
-export default TitleCard;
+export default TrendingCard;

@@ -1,5 +1,5 @@
 import React from 'react';
-import TitleCard from '../components/TitleCard';
+import TrendingCard from '../components/TrendingTitleCard';
 import { XSmallHeading } from '../components/Typography';
 
 function TrendingSlider({ data }) {
@@ -10,13 +10,13 @@ function TrendingSlider({ data }) {
 				{data.map((title, index) => {
 					if (title.isTrending)
 						return (
-							<TitleCard
+							<TrendingCard
 								key={index}
 								title={title.title}
 								year={title.year}
 								category={title.category}
 								rating={title.rating}
-								trneding={title.isTrending}
+								trending={title.isTrending}
 								bookmarked={title.isBookmarked}
 							/>
 						);
