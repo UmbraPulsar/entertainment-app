@@ -3,16 +3,18 @@ import PageWrapper from '../components/PageWrapper';
 import Header from './Header';
 import TrendingSlider from './TrendingSlider';
 import Inventory from '../data.json';
-import Recommends from './Recommends';
+import Listings from './Listings';
 
 function Home() {
 	const [data, setData] = useState(Inventory);
+	const [filterTerm, setFilterTerm] = useState('');
+
 	return (
 		<>
-			<Header page='home' />
+			<Header page='home' filterMethod={setFilterTerm} />
 			<PageWrapper>
 				<TrendingSlider data={data} />
-				<Recommends data={data} />
+				<Listings data={data} filter={filterTerm} />
 			</PageWrapper>
 		</>
 	);

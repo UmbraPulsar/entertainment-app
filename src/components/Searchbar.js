@@ -1,7 +1,7 @@
 import React from 'react';
 import { SearchIcon } from './Icons';
 
-function Searchbar() {
+function Searchbar({ filterMethod }) {
 	return (
 		<div className='flex px-4 mt-6'>
 			<SearchIcon />
@@ -20,6 +20,9 @@ function Searchbar() {
                 '
 				type='text'
 				placeholder='Search for movies or TV series'
+				onChange={(e) => {
+					filterMethod(e.target.value);
+				}}
 			/>
 		</div>
 	);
