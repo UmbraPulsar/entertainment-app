@@ -14,7 +14,11 @@ function Home() {
 			<Header page='home' filterMethod={setFilterTerm} />
 			<PageWrapper>
 				<TrendingSlider data={data} />
-				<Listings data={data} filter={filterTerm} />
+				<Listings
+					data={data}
+					filter={filterTerm}
+					header='Recommended for you'
+				/>
 			</PageWrapper>
 		</>
 	);

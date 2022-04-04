@@ -16,6 +16,7 @@ function Movies() {
 						(listing) => listing.category.toLowerCase() == 'movie',
 					)}
 					filter={filterTerm}
+					header='Movies'
 				/>
 			</PageWrapper>
 		</>

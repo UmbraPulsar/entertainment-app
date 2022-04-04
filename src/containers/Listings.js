@@ -1,10 +1,10 @@
 import React from 'react';
 import RegularCard from '../components/RegularCard';
-function Listings({ data, filter }) {
+function Listings({ data, filter, header }) {
 	return (
 		<>
 			<h2 className='my-6 font-Light text-[20px] text-PureWhite'>
-				Recommended for you
+				{header}
 			</h2>
 			<div className='grid grid-cols-2 gap-3.5'>
 				{data
