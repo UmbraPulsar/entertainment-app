@@ -10,9 +10,9 @@ import BookMarked from './containers/BookMarked';
 import './styles/index.css';
 ReactDOM.render(
 	<React.StrictMode>
-		<BrowserRouter>
+		<BrowserRouter basename={process.env.PUBLIC_URL}>
 			<Routes>
-				<Route path='/' element={<Home />} />
+				<Route exact path='/' element={<Home />} />
 				<Route path='Login' element={<Login />} />
 				<Route path='Sign-Up' element={<SignUp />} />
 				<Route path='Movies' element={<Movies />} />
