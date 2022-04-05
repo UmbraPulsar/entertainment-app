@@ -1,12 +1,13 @@
 import React from 'react';
 import RegularCard from '../components/RegularCard';
+
 function Listings({ data, filter, header }) {
 	return (
-		<>
-			<h2 className='my-6 font-Light text-[20px] text-PureWhite'>
+		<div className='px-6 md:px-8'>
+			<h2 className='my-6 font-Light text-[20px] md:text-L text-PureWhite'>
 				{header}
 			</h2>
-			<div className='grid grid-cols-2 gap-3.5'>
+			<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-cols-min gap-[15px] md:gap-[28px] lg:gap-[40px] col'>
 				{data
 					.filter((listing) =>
 						listing.title.toLowerCase().includes(filter),
@@ -24,7 +25,7 @@ function Listings({ data, filter, header }) {
 						);
 					})}
 			</div>
-		</>
+		</div>
 	);
 }
 

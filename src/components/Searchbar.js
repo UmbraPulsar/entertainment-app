@@ -3,7 +3,7 @@ import { SearchIcon } from './Icons';
 
 function Searchbar({ filterMethod }) {
 	return (
-		<div className='flex px-4 mt-6'>
+		<div className='flex mt-6 px-6 md:px-8'>
 			<SearchIcon />
 			<input
 				className='
@@ -17,6 +17,7 @@ function Searchbar({ filterMethod }) {
                 outline-none 
                 text-PureWhite 
                 font-Light
+				caret-Red
                 '
 				type='text'
 				placeholder='Search for movies or TV series'

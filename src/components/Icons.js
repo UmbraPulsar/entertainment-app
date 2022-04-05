@@ -15,9 +15,17 @@ export const BookmarkIcon = ({ filled }) => {
 	return (
 		<i>
 			{filled ? (
-				<img src={BookMarkFullImage} alt='' />
+				<img
+					className='group-hover:invert-0 group-hover:grayscale group-hover:brightness-0 transition-all'
+					src={BookMarkFullImage}
+					alt=''
+				/>
 			) : (
-				<img src={BookMarkEmptyImage} alt='' />
+				<img
+					className='group-hover:invert-0 group-hover:grayscale group-hover:brightness-0 transition-all '
+					src={BookMarkEmptyImage}
+					alt=''
+				/>
 			)}
 		</i>
 	);
@@ -42,7 +50,7 @@ export const NavIcon = ({ icon, active }) => {
 					className={
 						active == 'bookmark'
 							? 'invert grayscale brightness-0'
-							: null
+							: 'hover:invert hover:grayscale: hover:brightness-0  transition-all'
 					}
 					src={NavBookmarkImage}
 					alt=''
@@ -53,7 +61,7 @@ export const NavIcon = ({ icon, active }) => {
 					className={
 						active == 'home'
 							? 'invert grayscale brightness-0'
-							: null
+							: 'hover:invert hover:grayscale: hover:brightness-0  transition-all'
 					}
 					src={NavHomeImage}
 					alt=''
@@ -64,7 +72,7 @@ export const NavIcon = ({ icon, active }) => {
 					className={
 						active == 'movies'
 							? 'invert grayscale brightness-0'
-							: null
+							: 'hover:invert hover:grayscale: hover:brightness-0  transition-all'
 					}
 					src={NavMoviesImage}
 					alt=''
@@ -73,7 +81,9 @@ export const NavIcon = ({ icon, active }) => {
 			{icon === 'tv' ? (
 				<img
 					className={
-						active == 'tv' ? 'invert grayscale brightness-0' : null
+						active == 'tv'
+							? 'invert grayscale brightness-0'
+							: 'hover:invert hover:grayscale: hover:brightness-0 transition-all'
 					}
 					src={NavTvImage}
 					alt=''
@@ -109,7 +119,7 @@ export const LogoIcon = () => {
 
 export const ProfileIcon = () => {
 	return (
-		<i>
+		<i className='lg:mt-auto'>
 			<img
 				className='max-h-8 max-w-8 border rounded-full'
 				src={ProfileImage}
