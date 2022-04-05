@@ -12,7 +12,7 @@ function TrendingCard({
 	return (
 		<div
 			style={{
-				backgroundImage: `url("/thumbnails/${title.replace(
+				backgroundImage: `url("./entertainment-app/thumbnails/${title.replace(
 					/\s/g,
 					'-',
 				)}/${trending ? 'trending' : 'regular'}/small.jpg")`,

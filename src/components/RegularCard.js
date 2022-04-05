@@ -13,13 +13,13 @@ function RegularCard({
 		<div className='rounded-lg'>
 			<div
 				style={{
-					backgroundImage: `url("./thumbnails/${title
+					backgroundImage: `url("./entertainment-app/thumbnails/${title
 						.toLowerCase()
 						.replace(/\s/g, '-')
 						.replace(/'/g, '')
 						.replace(/’/g, '')
 						.replace(/:/g, '')
-						.replace(/II/g, '2')}/regular/small.jpg")`,
+						.replace(/ii/g, '2')}/regular/small.jpg")`,
 				}}
 				className={`
 			group
