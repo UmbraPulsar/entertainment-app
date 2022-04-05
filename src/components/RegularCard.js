@@ -13,7 +13,8 @@ function RegularCard({
 		<div className='rounded-lg'>
 			<div
 				style={{
-					backgroundImage: `url("/thumbnails/${title
+					backgroundImage: `url("./thumbnails/${title
+						.toLowerCase()
 						.replace(/\s/g, '-')
 						.replace(/'/g, '')
 						.replace(/’/g, '')
