@@ -12,10 +12,15 @@ function TrendingCard({
 	return (
 		<div
 			style={{
-				backgroundImage: `url("./thumbnails/${title.replace(
-					/\s/g,
-					'-',
-				)}/${trending ? 'trending' : 'regular'}/small.jpg")`,
+				backgroundImage: `url("./thumbnails/${title
+					.toLowerCase()
+					.replace(/\s/g, '-')
+					.replace(/'/g, '')
+					.replace(/’/g, '')
+					.replace(/:/g, '')
+					.replace(/ii/g, '2')}/${
+					trending ? 'trending' : 'regular'
+				}/small.jpg")`,
 			}}
 			className={`
 			group
